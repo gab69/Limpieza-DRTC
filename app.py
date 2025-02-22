@@ -130,9 +130,12 @@ if __name__ == '__main__':
     # Crear carpetas necesarias
     os.makedirs('uploads', exist_ok=True)
     os.makedirs('output', exist_ok=True)
-
-    # Ejecutar la aplicación
-    app.run(debug=True)
+    # Obtener el puerto de la variable de entorno o usar 5000 por defecto
+    port = int(os.environ.get('PORT', 5000))
+    # Escuchar en todas las interfaces de red (0.0.0.0) para desplegar
+    app.run(host='0.0.0.0', port=port, debug=False)
+    # Ejecutar la aplicación en local
+    #app.run(debug=True)
     
     
     
