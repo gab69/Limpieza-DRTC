@@ -1,0 +1,35 @@
+/* Estilos personalizados */
+body {
+    background-color: #78ace0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+.btn-secundary{
+    background-color: #c33bf0;
+    border: none;
+}
+
+.btn-secundary:hover{
+    background-color: #8a0ca0;
+    border: none;
+}
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
